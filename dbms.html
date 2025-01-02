@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <form action="submit_form.php" method="post" enctype="multipart/form-data">
+                <h3>PERSONAL INFORMATION</h3>
+                <label for="firstname">First Name <span>*</span></label>
+                <input type="text" id="firstname" name="firstname">
+                
+                <label for="secondname">Last Name <span>*</span></label>
+                <input type="text" id="lastname" name="lastname">
+                
+                <label for="email">Email ID <span>*</span></label>
+                <input type="email" id="email" name="email" placeholder="hello@google.com">
+                
+                <label for="phone">Phone No <span>*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="">
+            
+                <label for="city">Select City <span>*</span></label>
+                <select id="city" name="city">
+                    <option value="malappuram">Malappuram</option>
+                    <option value="manjeri">Manjeri</option>
+                    <option value="perinthalmanna">Perinthalmanna</option>
+                    <option value="tirur">Tirur</option>
+                    <option value="ponnani">Ponnani</option>
+                    <option value="kottakkal">Kottakkal</option>
+                    <option value="nilambur">Nilambur</option>
+                    <option value="kondotty">Kondotty</option>
+                    <option value="tanur">Tanur</option>
+                    <option value="valanchery">Valanchery</option>
+                    <option value="edappal">Edappal</option>
+                </select>
+            
+                <h3>EDUCATION BACKGROUND</h3>
+                <label for="institution">Institution <span>*</span></label>
+                <input type="text" id="institution" name="institution" placeholder="Your Institution Name">
+            
+                <label for="degree">Degree <span>*</span></label>
+                <input type="text" id="degree" name="degree" placeholder="Your Degree (e.g., B.tech. Computer Science)">
+            
+                <label for="graduation-year">Year of Graduation <span>*</span></label>
+                <input type="number" id="graduation-year" name="graduation_year" placeholder="2024">
+            
+                <h3>EMPLOYMENT HISTORY</h3>
+                <label for="company">Company <span>*</span></label>
+                <input type="text" id="company" name="company" placeholder="Your Company Name">
+            
+                <label for="position">Position <span>*</span></label>
+                <input type="text" id="position" name="position" placeholder="Your Position (e.g., Software Engineer)">
+            
+                <label for="years-service">Years of Service <span>*</span></label>
+                <input type="number" id="years-service" name="years_service" placeholder="e.g., 2">
+            
+                <h3>DOCUMENTS</h3>
+                <label for="upload-doc">Upload Document <span>*</span></label>
+                <input type="file" id="upload-doc" name="upload_doc">
+            
+                <h3>EMERGENCY CONTACTS</h3>
+                <label for="contact-name">Contact Name <span>*</span></label>
+                <input type="text" id="contact-name" name="contact_name" placeholder="Emergency Contact Name">
+            
+                <label for="relationship">Relationship <span>*</span></label>
+                <input type="text" id="relationship" name="relationship" placeholder="Relationship (e.g., Parent)">
+            
+                <label for="contact-phone">Phone Number <span>*</span></label>
+                <input type="tel" id="contact-phone" name="contact_phone" placeholder="Contact Phone Number">
+                
+                <button type="submit" class="submit-btn">SUBMIT</button>
+            </form>
